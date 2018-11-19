@@ -27,7 +27,11 @@ services:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: $POSTGRES_PASSWORD
       POSTGRES_DB: blogapp
-
+    ports:
+      - "5433:5432"
+    volumes:
+      - "./pgsql/postgresql.conf:/etc/postgresql/postgresql.conf"
+      - "./pgsql/data:/var/lib/postgresql/data"
   admin:
     image: adminer
     ports:
