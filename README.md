@@ -46,3 +46,10 @@ docker-compose rm -f
 ```
 for remove cached git rm -r --cached .
 ```
+
+```
+show log query statment  pgsql
+
+ALTER DATABASE blogapp
+SET log_statement = 'all';
+```
