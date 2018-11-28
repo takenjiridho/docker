@@ -53,3 +53,18 @@ show log query statment  pgsql
 ALTER DATABASE blogapp
 SET log_statement = 'all';
 ```
+
+## Add Alias to Open file with `vscode` in the terminal
+
+```bash
+# You can now make vscode [FOLDER] in the Terminal
+echo alias vscode=\"/Applications/Visual\\ Studio\\ Code.app/contents/Resources/app/bin/code\" >> ~/.zshrc
+
+# Reload you Terminal 
+
+source ~/.bash_profile
+
+## If you are using zsh
+
+source ~/.zshrc
+```
