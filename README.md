@@ -46,3 +46,14 @@ docker-compose rm -f
 ```
 for remove cached git rm -r --cached .
 ```
+
+## A few useful commands pgsql
+
+```
+\c databasename; change db
+\dt; show tables
+\d table_name ; describe table
+
+ALTER TABLE profile
+ADD COLUMN deleted_at time;
+```
